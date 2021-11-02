@@ -1,0 +1,86 @@
+@import "../../Styles/variables";
+
+.About {
+  display: flex;
+  align-items: center;
+  background-color: #d8eefe41;
+
+  .About__container {
+    @media (max-width: 991px) {
+      width: 100% !important;
+    }
+  }
+
+  .About__title {
+    padding: 1rem 2rem;
+    font-family: "Quicksand", sans-serif;
+    color: #094067;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 38px;
+      width: 80px;
+      border: 2px solid #ef4565;
+
+      @media (max-width: 767px) {
+        left: 22px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding: 1rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
+  }
+
+  .About__row {
+    margin: 1.5rem 0;
+    padding: 2rem 0;
+
+    .About__card {
+      display: flex;
+      padding: 2rem 1rem;
+
+      .About__image {
+        width: 60px;
+        height: 60px;
+      }
+
+      .About__card__info {
+        margin-left: 24px;
+
+        h1 {
+          font-family: "Quicksand", sans-serif;
+          color: #094067;
+          font-size: 1.25rem;
+        }
+
+        p {
+          margin-top: 12px;
+          color: #5f6c7b;
+          line-height: $line-height-base;
+          font-size: 0.875rem;
+          font-family: "Varela", sans-serif;
+        }
+      }
+
+      @media (max-width: 767px) {
+        padding: 2rem 0;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    min-height: 100%;
+  }
+
+  @media (max-width: 991px) {
+    padding: 3.5rem 0 2rem 0;
+  }
+}

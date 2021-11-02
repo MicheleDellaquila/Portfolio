@@ -1,0 +1,65 @@
+.ManagementLibrary {
+  background-color: #fffffe;
+
+  .ManagementLibrary__container {
+    padding: 9rem 0 0 0;
+
+    .ManagementLibrary__content {
+      padding: 0 15px;
+    }
+
+    .ManagementLibrary__subtitle {
+      font-size: 1.125rem;
+      color: #ef4565;
+      font-family: "Quattrocento", serif;
+    }
+
+    .ManagementLibrary__title {
+      font-family: "Quicksand", sans-serif;
+      line-height: 1.2;
+      color: #094067;
+      margin-top: 18px;
+
+      @media (max-width: 576px) {
+        font-size: 2rem;
+      }
+    }
+
+    .ManagementLibrary__text {
+      line-height: 1.5;
+      font-family: "Varela", sans-serif;
+      margin-top: 0.5rem;
+      color: #5f6c7b;
+    }
+
+    .ManagementLibrary__list {
+      padding: 4rem 0 1rem 0;
+      margin: 0 -10px 0 -10px;
+
+      li > div {
+        margin: 10px 0;
+
+        h1 {
+          font-family: "Quicksand", sans-serif;
+          font-size: 1rem;
+          color: #094067;
+        }
+
+        p {
+          font-family: "Varela", sans-serif;
+          color: #5f6c7b;
+          line-height: 1.5;
+          margin: 8px 0 0 2px;
+        }
+      }
+    }
+
+    @media (max-width: 991px) {
+      width: 100% !important;
+    }
+
+    @media (max-width: 768px) {
+      padding: 6rem 0 0 0;
+    }
+  }
+}

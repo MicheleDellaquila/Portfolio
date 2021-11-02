@@ -1,0 +1,41 @@
+.Menu {
+  position: absolute;
+  top: 60px;
+  background-color: #fffffe;
+  overflow: hidden;
+
+  .Menu__list {
+    padding: 1.25rem 0;
+
+    .Menu__list__item {
+      padding: 0.875rem 1.875rem;
+      cursor: pointer;
+      color: #272343;
+      font-family: "Quattrocento", serif;
+      font-size: 1rem;
+
+      &:hover {
+        border-left: 2px solid #3da9fc;
+      }
+    }
+  }
+}
+
+/* animation */
+.menuAnimation-enter {
+  max-height: 0;
+}
+
+.menuAnimation-enter-done {
+  max-height: 400px;
+  transition: max-height 500ms;
+}
+
+.menuAnimation-exit {
+  max-height: 400px;
+}
+
+.menuAnimation-exit-active {
+  max-height: 0;
+  transition: max-height 600ms;
+}
