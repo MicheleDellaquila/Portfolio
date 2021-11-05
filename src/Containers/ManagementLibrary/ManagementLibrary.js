@@ -7,7 +7,6 @@ import HomeLibrary from "../../assets/Image/Projects/HomeLibrary.png";
 import AddBook from "../../assets/Image/Projects/AddBook.png";
 import LoaderLibrary from "../../assets/Image/Projects/LoaderLibrary.png";
 import BookImage from './BookImage/BookImage';
-import Footer from "../../Containers/Footer/Footer";
 
 
 const ManagementLibrary = () => {
