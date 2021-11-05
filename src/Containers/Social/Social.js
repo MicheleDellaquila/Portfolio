@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 const Social = () => {
     const history = useHistory();
-    
+
     return (
         <div className="Social">
             <div className="Social__container container">
@@ -15,7 +15,7 @@ const Social = () => {
                             <h1 className="dispaly-5">Pagina non trovata</h1>
                             <p>La pagina non è ancora disponibile.</p>
                             <button className="Social__btn" onClick={() => {
-                                history.goBack()
+                                history.replace("/")
                             }}>Go back</button>
                         </div>
                     </div>
