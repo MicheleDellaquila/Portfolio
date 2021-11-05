@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import ManagementLibrary from './Containers/ManagementLibrary/ManagementLibrary';
+import Social from "./Containers/Social/Social";
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
       </Route>
       <Route exact path="/Management-Library">
         <ManagementLibrary />
+      </Route>
+      <Route exact path="/Social">
+        <Social />
       </Route>
     </Router>
   );
