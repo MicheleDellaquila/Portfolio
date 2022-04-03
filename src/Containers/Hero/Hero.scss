@@ -1,0 +1,98 @@
+@import '../../index.scss';
+
+.Hero {
+  height: 100%;
+
+  &__container {
+    display: flex;
+    height: 100%;
+
+    .Hero__row {
+      padding: 8rem 0;
+      position: relative;
+
+      .Hero__col {
+        margin: 1rem 0;
+
+        .Hero__wrapper {
+          margin-top: 3.5rem;
+
+          &-subtitle {
+            color: $color--text;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 0.75rem;
+
+            .Hero__subtitle--name {
+              color: $color--title;
+            }
+          }
+
+          &-title {
+            font-size: 3.25rem;
+            line-height: 1;
+            color: $color--title;
+            margin-bottom: 1.75rem;
+            font-weight: bold;
+          }
+
+          &-presentation {
+            font-weight: 500;
+            line-height: 1.5;
+            font-size: 1.25rem;
+            color: $color--text;
+            margin-bottom: 2.25rem;
+          }
+
+          &-curriculum {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid $color--third;
+            background-color: $color--third;
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 0.3rem;
+            font-weight: 400;
+            line-height: 1.5;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color--primary;
+
+            .Hero__curriculum-icon {
+              position: absolute;
+              transform: translateY(30px);
+              margin-left: 0.5rem;
+              transition: all 1s;
+            }
+
+            &:hover {
+              background-color: $color--primary;
+              color: $color--third;
+            }
+
+            &:hover > .Hero__curriculum-icon {
+              position: relative;
+              color: $color--third;
+              transform: translateY(0);
+              transition: all 0.8s;
+            }
+          }
+        }
+
+        .Hero__socialList {
+          display: flex;
+          align-items: center;
+          margin-top: 3rem;
+
+          &-item {
+            cursor: pointer;
+          }
+        }
+
+        &:last-child {
+        }
+      }
+    }
+  }
+}

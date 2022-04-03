@@ -1,0 +1,87 @@
+@import './variables';
+
+/* container */
+@each $property, $key in $breakpoints {
+  @if ($property == 'xs') {
+    .container {
+      @media (min-width: 280px) {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+    }
+  } @else if ($property == 'sm') {
+    .container {
+      @media (min-width: 576px) {
+        max-width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+    }
+  } @else if ($property == 'md') {
+    .container {
+      @media (min-width: 768px) {
+        max-width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+    }
+  } @else if ($property == 'lg') {
+    .container {
+      @media (min-width: 992px) {
+        max-width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+    }
+  } @else if($property == 'xl') {
+    .container {
+      @media (min-width: 1200px) {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+    }
+  } @else {
+    .container {
+      @media (min-width: 1400px) {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+    }
+  }
+}
+
+/* create column */
+@each $property, $key in $breakpoints__col {
+  @for $i from 1 through $columns {
+    @media (min-width: $key) {
+      .col-#{$property}-#{$i} {
+        flex-basis: (100% / $columns) * $i;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+    }
+  }
+}
+
+/* row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
