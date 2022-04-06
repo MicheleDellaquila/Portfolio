@@ -4,11 +4,11 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   it: {
     translation: {
-      Competenze: 'Competenze',
+      SuDiMe: 'Su di me',
       Esperienze: 'Esperienze',
-      Progetti: 'Progetti',
-      Presentazione:
-        'Negli ultimi 3 anni , ho passato il mio a tempo a svilluppare siti web per aziende locali e negozi lecoli per aiutarli a crescere e aiutare me medesimo nella crescita professionale.',
+      Hero: 'Negli ultimi 3 anni , ho passato il mio a tempo a svilluppare siti web per aziende locali e negozi locali per aiutarli a crescere e aiutare me medesimo nella crescita professionale.',
+      HeroSubtitle: 'Ciao , Mi chiamo',
+      HeroTitle: 'Sono un sviluppatore Web',
       WebDeveloper:
         'Svilluppo web da 3 anni circa. Ho diverse esperienze con il web e le mie skill principali sono: HTML5 , CSS3 , JS/TS e React js',
       MobileDeveloper:
@@ -38,11 +38,11 @@ const resources = {
   },
   en: {
     translation: {
-      Competenze: 'Skills',
+      SuDiMe: 'About me',
       Esperienze: 'Experiences',
-      Progetti: 'Project',
-      Presentazione:
-        'My name is michele dellaquila and I have been developing web for 3 years. I love technology and spend a lot of time improving my knowledge and keeping up to date on new tools.',
+      Hero: 'My name is michele dellaquila and I have been developing web for 3 years. I love technology and spend a lot of time improving my knowledge and keeping up to date on new tools.',
+      HeroSubtitle: 'Hello, My name is',
+      HeroTitle: "I'm a web developer",
       WebDeveloper:
         'Web development for about 3 years. I have several experiences with the web and my main skills are: HTML5, CSS3, JS / TS and React js',
       MobileDeveloper:

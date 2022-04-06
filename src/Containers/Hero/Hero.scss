@@ -1,18 +1,20 @@
 @import '../../index.scss';
 
 .Hero {
-  height: 100%;
+  min-height: 100%;
 
   &__container {
     display: flex;
+    flex-direction: column;
     height: 100%;
 
     .Hero__row {
+      align-items: center;
       padding: 8rem 0;
       position: relative;
 
       .Hero__col {
-        margin: 1rem 0;
+        margin: 0 auto;
 
         .Hero__wrapper {
           margin-top: 3.5rem;
@@ -26,6 +28,11 @@
             .Hero__subtitle--name {
               color: $color--title;
             }
+
+            @media (max-width: 576px) {
+              margin-bottom: 0.5rem;
+              font-size: 0.875rem;
+            }
           }
 
           &-title {
@@ -34,6 +41,12 @@
             color: $color--title;
             margin-bottom: 1.75rem;
             font-weight: bold;
+
+            @media (max-width: 576px) {
+              font-size: 2.25rem;
+              line-height: 1.25;
+              margin-bottom: 1.25rem;
+            }
           }
 
           &-presentation {
@@ -42,9 +55,14 @@
             font-size: 1.25rem;
             color: $color--text;
             margin-bottom: 2.25rem;
+
+            @media (max-width: 576px) {
+              font-size: 1.125rem;
+            }
           }
 
           &-curriculum {
+            display: inline-block;
             position: relative;
             overflow: hidden;
             border: 1px solid $color--third;
@@ -58,12 +76,11 @@
             text-transform: uppercase;
             text-decoration: none;
             color: $color--primary;
+            transition: all 600ms cubic-bezier(0.37, 0, 0.63, 1);
 
             .Hero__curriculum-icon {
-              position: absolute;
-              transform: translateY(30px);
+              position: relative;
               margin-left: 0.5rem;
-              transition: all 1s;
             }
 
             &:hover {
@@ -72,27 +89,55 @@
             }
 
             &:hover > .Hero__curriculum-icon {
-              position: relative;
               color: $color--third;
-              transform: translateY(0);
-              transition: all 0.8s;
             }
+          }
+
+          @media (max-width: 768px) {
+            margin-top: 2.75rem;
           }
         }
 
         .Hero__socialList {
           display: flex;
           align-items: center;
-          margin-top: 3rem;
+          margin-top: 2.25rem;
 
           &-item {
             cursor: pointer;
+
+            .Hero__item-link {
+              color: $color--secondary;
+            }
+
+            &:first-child {
+              margin-right: 0.5rem;
+            }
+
+            &:hover {
+              transform: scale(1.1);
+            }
           }
         }
 
-        &:last-child {
+        @media (max-width: 991px) {
+          &:first-child {
+            order: 1;
+          }
+
+          &:last-child {
+            order: 2;
+          }
         }
       }
+
+      @media (max-width: 991px) {
+        padding: 5rem 0;
+      }
     }
+  }
+
+  @media (max-width: 991px) {
+    height: auto;
   }
 }
