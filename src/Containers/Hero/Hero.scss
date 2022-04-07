@@ -2,19 +2,23 @@
 
 .Hero {
   min-height: 100%;
+  padding: 0 3.75rem;
 
   &__container {
     display: flex;
     flex-direction: column;
     height: 100%;
+    max-width: 1400px;
 
     .Hero__row {
       align-items: center;
       padding: 8rem 0;
       position: relative;
+      margin: 0;
 
       .Hero__col {
         margin: 0 auto;
+        padding: 0 !important;
 
         .Hero__wrapper {
           margin-top: 3.5rem;
@@ -55,6 +59,7 @@
             font-size: 1.25rem;
             color: $color--text;
             margin-bottom: 2.25rem;
+            max-width: 460px;
 
             @media (max-width: 576px) {
               font-size: 1.125rem;

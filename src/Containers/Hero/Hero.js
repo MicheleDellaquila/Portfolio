@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <Element name='Hero' className='Hero'>
-      <section className='Hero__container container'>
+      <section className='Hero__container'>
         <div className='Hero__row row'>
           <div className='Hero__col col-xs-12 col-lg-5'>
             <div className='Hero__wrapper'>

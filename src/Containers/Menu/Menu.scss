@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1.5rem;
+    z-index: 1;
 
     &-logo {
       display: flex;
@@ -38,11 +39,11 @@
     .Menu__close {
       display: flex;
       cursor: pointer;
+    }
 
-      &-icon {
-        font-size: 22px;
-        color: #ffffff;
-      }
+    .Menu__close-icon {
+      font-size: 32px;
+      color: #ffffff;
     }
   }
 
@@ -59,7 +60,7 @@
       height: 100%;
 
       .Menu__list-item {
-        width: 40%;
+        width: 360px;
         padding: 1rem 0;
         border-bottom: 1px solid #ffffff;
 
@@ -68,6 +69,7 @@
           color: transparent;
           -webkit-text-stroke: 1px #ffffff;
           font-weight: bold;
+          cursor: pointer;
 
           &:active {
             color: #ffffff;
