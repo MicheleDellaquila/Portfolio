@@ -5,6 +5,10 @@ import { useTranslation } from 'react-i18next';
 import { HiMenu } from 'react-icons/hi';
 import Menu from '../../Containers/Menu/Menu';
 import { AnimatePresence } from 'framer-motion/dist/framer-motion';
+import * as Scroll from 'react-scroll';
+
+// Link
+var Link = Scroll.Link;
 
 const Header = () => {
   const [activeHeader, setActiveHeader] = useState(false);
@@ -42,10 +46,46 @@ const Header = () => {
           </div>
           <nav className='Header__nav'>
             <ul className='Header__nav-list'>
-              <li className='Header__list-item'>Home</li>
-              <li className='Header__list-item'>{t('SuDiMe')}</li>
-              <li className='Header__list-item'>Skill</li>
-              <li className='Header__list-item'>{t('Esperienze')}</li>
+              <Link
+                to='Hero'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className='Header__list-item'
+              >
+                Home
+              </Link>
+              <Link
+                to={t('SuDiMe')}
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className='Header__list-item'
+              >
+                {t('SuDiMe')}
+              </Link>
+              <Link
+                to='Skill'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className='Header__list-item'
+              >
+                Skill
+              </Link>
+              <Link
+                to={t('Esperienze')}
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className='Header__list-item'
+              >
+                {t('Esperienze')}
+              </Link>
             </ul>
           </nav>
           <div className='Header__menu' onClick={menuChangeHandler}>

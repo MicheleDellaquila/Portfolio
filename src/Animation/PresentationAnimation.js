@@ -1,5 +1,5 @@
 export const containerAnimation = {
-  exit: { y: -1000, transition: { type: 'easeOut', duration: 1 } },
+  exit: { y: -1000, transition: { type: 'easeOutCubic', duration: 1 } },
 };
 
 export const imageAnimation = {

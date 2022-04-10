@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import About from './Containers/About/About';
-import Contact from './Containers/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Hero from './Components/Hero/Hero';
 import WorkExperience from './Containers/WorkExperience/WorkExperience';
@@ -14,7 +13,6 @@ function App() {
       <Hero />
       <About />
       <WorkExperience />
-      <Contact />
       <Footer />
     </Fragment>
   );

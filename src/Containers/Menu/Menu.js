@@ -34,39 +34,49 @@ const Menu = ({ onClose }) => {
         <ul className='Menu__nav-list'>
           <li className='Menu__list-item'>
             <Link
-              className='Menu__item-link'
-              onClick={onClose}
-              to='Home'
+              to='Hero'
               spy={true}
               smooth={true}
-              offset={50}
               duration={500}
+              className='Menu__item-link'
+              onClick={onClose}
             >
               Home
             </Link>
           </li>
           <li className='Menu__list-item'>
             <Link
-              className='Menu__item-link'
-              onClick={onClose}
-              to={t('Competenze')}
+              to={t('SuDiMe')}
               spy={true}
               smooth={true}
-              offset={50}
               duration={500}
+              className='Menu__item-link'
+              onClick={onClose}
             >
-              {t('Competenze')}
+              {t('SuDiMe')}
             </Link>
           </li>
           <li className='Menu__list-item'>
             <Link
+              to='skill'
+              spy={true}
+              smooth={true}
+              duration={500}
               className='Menu__item-link'
               onClick={onClose}
+            >
+              Skill
+            </Link>
+          </li>
+          <li className='Menu__list-item'>
+            <Link
               to={t('Esperienze')}
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
+              className='Menu__item-link'
+              onClick={onClose}
             >
               {t('Esperienze')}
             </Link>
