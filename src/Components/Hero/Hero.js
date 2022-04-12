@@ -41,7 +41,7 @@ const Hero = () => {
                 <div className='Hero__col col-xs-12 col-lg-5'>
                   <div className='Hero__wrapper'>
                     <h3 className='Hero__wrapper-subtitle'>
-                      👋 {t('HeroSubtitle')}{' '}
+                      👋 {t('HeroSubtitle')}
                       <strong className='Hero__subtitle--name'>Michele</strong>
                     </h3>
                     <h1 className='Hero__wrapper-title'>{t('HeroTitle')}</h1>
