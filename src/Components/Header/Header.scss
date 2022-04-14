@@ -19,23 +19,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 3.75rem;
+    padding: 0 3.75rem;
 
     .Header__logo {
       display: flex;
       align-items: center;
 
       &-image {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-      }
+        width: 160px;
+        object-position: -8px;
 
-      &-title {
-        margin-left: 0.5rem;
-        font-weight: 600;
-        font-size: 1rem;
-        color: $color--title;
+        @media (max-width: 991px) {
+          object-position: -10px;
+        }
       }
     }
 
@@ -78,7 +74,7 @@
     }
 
     @media (max-width: 991px) {
-      padding: 1rem 1.5rem;
+      padding: 0 1rem;
     }
   }
 }

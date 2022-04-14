@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import './Header.scss';
-import Logo from '../../assets/Icon/MD.svg';
+import Logo from '../../assets/Icon/Logo.png';
 import { useTranslation } from 'react-i18next';
 import { HiMenu } from 'react-icons/hi';
 import Menu from '../../Containers/Menu/Menu';
@@ -17,7 +17,7 @@ const Header = () => {
 
   // chech if header must active or not
   const onScroolHandler = () => {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 50) {
       setActiveHeader(true);
     } else {
       setActiveHeader(false);
@@ -42,25 +42,17 @@ const Header = () => {
         <div className='Header__wrapper'>
           <div className='Header__logo'>
             <img className='Header__logo-image' src={Logo} alt='logo' />
-            <h3 className='Header__logo-title'>Michele Dellaquila</h3>
           </div>
           <nav className='Header__nav'>
             <ul className='Header__nav-list'>
-              <Link
-                to='Hero'
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className='Header__list-item'
-              >
+              <Link to='Hero' spy={true} smooth={true} duration={500} className='Header__list-item'>
                 Home
               </Link>
               <Link
                 to={t('SuDiMe')}
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={-50}
                 duration={500}
                 className='Header__list-item'
               >
@@ -70,7 +62,7 @@ const Header = () => {
                 to='Skill'
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={-50}
                 duration={500}
                 className='Header__list-item'
               >
@@ -80,7 +72,7 @@ const Header = () => {
                 to={t('Esperienze')}
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={-50}
                 duration={500}
                 className='Header__list-item'
               >

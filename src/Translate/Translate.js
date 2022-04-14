@@ -9,31 +9,16 @@ const resources = {
       Hero: 'Negli ultimi 3 anni , ho passato il mio a tempo a svilluppare siti web per aziende locali e negozi locali per aiutarli a crescere e aiutare me medesimo nella crescita professionale.',
       HeroSubtitle: 'Ciao , Mi chiamo',
       HeroTitle: 'Sono un sviluppatore Web',
-      WebDeveloper:
-        'Svilluppo web da 3 anni circa. Ho diverse esperienze con il web e le mie skill principali sono: HTML5 , CSS3 , JS/TS e React js',
-      MobileDeveloper:
-        'Svilluppo mobile, ios / android ,con il supporto di react native (JS / TS) che mi ha permesso di cimentarmi in diversi progetti.',
-      JSDev:
-        'Junior javascript developer da circa 3 anni. Esperienza in JS vanilla , Jquery e Ecmascript 6 e versioni successive.',
-      FullDeveloper:
-        'Conoscenza di Node js , Express js e Mongo db , oltre alla mia esperienza di JS / TS , HTML5 e CSS3.',
-      'E-commerce':
-        'Creazione di e-commerce utilizzando wordpress + plugin di supporto come Woocomerce.',
-      'Car-management':
-        "Creazione di un'app reattiva nativa che si occupa della gestione delle vostre auto tramite schede informative.",
-      Management: 'Creazione di un gestionale in react per la gestione di un lido.',
-      'Management-Library':
-        "Gestione di una biblioteca per la visione di quest’ultima e l'aggiunta dei libri.",
-      'Social-clone':
-        'Crezione di un social con le funzionalità principali di instagram , facebook.',
-      'Contact-title': 'Crea il tuo sito web',
-      'Contact-text': 'Contattami per creare il tuo sito , creare collaborazioni e tanto altro.',
-      Italiano: 'Italiano',
-      Inglese: 'Inglese',
-      'Info-progetto': 'Info progetto',
-      'Data-inizio': 'Data inizio',
-      'Data-fine': 'Data fine',
-      'Tecnologie-utilizzate': 'Tecnologie utilizzate',
+      AboutTopTitle: 'Ciao, Sono Michele!',
+      AboutSubtitle: 'Negli ultimi 3 anni , ho passato il mio a tempo a svilluppare siti web',
+      AboutText: `Offro un servizio di progettazione professionale dal 2019 evolvendo con il settore. Sono appassionato di sviluppatori di software con 3 anni di esperienza. Adoro
+      tecnologia e dedico molto tempo a migliorare le mie conoscenze, rimanere aggiornato e
+      scopri gli strumenti. In questi due anni ho sviluppato applicazioni e applicazioni web
+      per dispositivi iOS e Android con reattività e reazione nativa, ne ho usati diversi
+      framework per lavori nella mia città come WordPress o bootstrap.Sono una persona ambiziosa che ama lavorare in team, proporre idee e collaborare.`,
+      AboutBtn: 'Conttatami',
+      FooterIta: "Italiano",
+      FooterEng: "Inglese"
     },
   },
   en: {
@@ -43,29 +28,16 @@ const resources = {
       Hero: 'My name is michele dellaquila and I have been developing web for 3 years. I love technology and spend a lot of time improving my knowledge and keeping up to date on new tools.',
       HeroSubtitle: 'Hello, My name is',
       HeroTitle: "I'm a web developer",
-      WebDeveloper:
-        'Web development for about 3 years. I have several experiences with the web and my main skills are: HTML5, CSS3, JS / TS and React js',
-      MobileDeveloper:
-        'Mobile development, ios / android, with the support of react native (JS / TS) which allowed me to try my hand at different projects.',
-      JSDev:
-        'Junior javascript developer for about 3 years. Experience in JS vanilla, Jquery and Ecmascript 6 and above.',
-      FullDeveloper:
-        'Knowledge of Node js, Express js and Mongo db, in addition to my experience of JS / TS, HTML5 and CSS3.',
-      'E-commerce':
-        'Creation of e-commerce with the use of wordpress + support plugins such as Woocomerce.',
-      'Car-management':
-        'Creation of a react native app that takes care of the management of your cars through information cards.',
-      Management: 'Creation of a management system in reaction for the management of a beach.',
-      'Management-Library': 'Management of a library for the vision of the latter.',
-      'Social-clone': 'Creation of a social network with the main features of instagram, facebook.',
-      'Contact-title': 'Create your website',
-      'Contact-text': 'Contact me to create your site, create collaborations and much more.',
-      Italiano: 'Italian',
-      Inglese: 'English',
-      'Info-progetto': 'Info project',
-      'Data-inizio': 'Start date',
-      'Data-fine': 'Finish date',
-      'Tecnologie-utilizzate': 'Used technologies',
+      AboutTopTitle: "Hi, I'm Michele!",
+      AboutSubtitle: "For the past 3 years, I've spent my time developing websites",
+      AboutText: `I have been offering a professional design service since 2019, evolving with the sector. I am passionate about software developers with 3 years of experience. I adore
+      technology and I spend a lot of time improving my knowledge, staying up to date and
+      discover the tools. In these two years I have developed applications and web applications
+      for iOS and Android devices with native responsiveness and reaction, I have used several
+      framework for jobs in my city like WordPress or bootstrap. I am an ambitious person who loves to work in a team, propose ideas and collaborate.`,
+      AboutBtn: 'Contact',
+      FooterIta: "Italian",
+      FooterEng: "English"
     },
   },
 };

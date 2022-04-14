@@ -19,7 +19,7 @@
       margin: 0;
 
       .Hero__col {
-        margin: 0 auto;
+        margin: 1rem auto;
         padding: 0 !important;
 
         .Hero__wrapper {
@@ -33,6 +33,11 @@
 
             .Hero__subtitle--name {
               color: $color--title;
+              margin-left: 0.25rem;
+            }
+
+            @media (max-width: 991px) {
+              text-align: center;
             }
 
             @media (max-width: 576px) {
@@ -48,8 +53,12 @@
             margin-bottom: 1.75rem;
             font-weight: bold;
 
+            @media (max-width: 991px) {
+              text-align: center;
+            }
+
             @media (max-width: 576px) {
-              font-size: 2.25rem;
+              font-size: 2rem;
               line-height: 1.25;
               margin-bottom: 1.25rem;
             }
@@ -63,40 +72,64 @@
             margin-bottom: 2.25rem;
             max-width: 460px;
 
+            @media (max-width: 991px) {
+              text-align: center;
+              margin: 0 auto 2.25rem auto;
+              max-width: 100%;
+            }
+
             @media (max-width: 576px) {
-              font-size: 1.125rem;
+              font-size: 1rem;
             }
           }
 
-          &-curriculum {
-            display: inline-block;
+          &-btn {
             position: relative;
-            overflow: hidden;
-            border: 1px solid $color--third;
-            background-color: $color--third;
-            padding: 0.5rem 1.5rem;
-            font-size: 1rem;
-            border-radius: 0.3rem;
-            font-weight: 400;
-            line-height: 1.5;
-            cursor: pointer;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: $color--primary;
-            transition: all 600ms cubic-bezier(0.37, 0, 0.63, 1);
 
-            .Hero__curriculum-icon {
+            .Hero__btn-curriculum {
+              display: inline-block;
               position: relative;
-              margin-left: 0.5rem;
+              overflow: hidden;
+              border: 1px solid $color--third;
+              background-color: $color--third;
+              padding: 0.5rem 1.5rem;
+              font-size: 1rem;
+              border-radius: 0.3rem;
+              font-weight: 400;
+              line-height: 1.5;
+              cursor: pointer;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: $color--primary;
+              transition: all 600ms cubic-bezier(0.37, 0, 0.63, 1);
+
+              .Hero__curriculum-icon {
+                position: relative;
+                margin-left: 0.5rem;
+              }
+
+              &:hover {
+                background-color: $color--primary;
+                color: $color--third;
+              }
+
+              &:hover > .Hero__curriculum-icon {
+                color: $color--third;
+              }
+
+              @media (max-width: 768px) {
+                width: 100%;
+                text-align: center;
+              }
             }
 
-            &:hover {
-              background-color: $color--primary;
-              color: $color--third;
+            @media (max-width: 768px) {
+              justify-content: flex-start;
             }
 
-            &:hover > .Hero__curriculum-icon {
-              color: $color--third;
+            @media (max-width: 991px) {
+              display: flex;
+              justify-content: center;
             }
           }
 
@@ -126,6 +159,10 @@
               transform: scale(1.1);
             }
           }
+
+          @media (max-width: 991px) {
+            justify-content: center;
+          }
         }
 
         @media (max-width: 991px) {
@@ -135,6 +172,16 @@
 
           &:last-child {
             order: 2;
+          }
+        }
+
+        &:first-child {
+          padding-right: 1rem !important;
+
+          @media (max-width: 991px) {
+            &:first-child {
+              padding-right: 0;
+            }
           }
         }
       }

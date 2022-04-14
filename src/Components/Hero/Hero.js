@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import './Hero.scss';
-import HeroImage from '../../assets/Image/Hero.jpg';
+import HeroImage from '../../assets/Image/Hero.jpeg';
 import Curriculum from '../../assets/Curriculum/Curriculum.pdf';
 import { useTranslation } from 'react-i18next';
 import * as Scroll from 'react-scroll';
@@ -38,7 +38,7 @@ const Hero = () => {
               className='Hero__container'
             >
               <div className='Hero__row row'>
-                <div className='Hero__col col-xs-12 col-lg-5'>
+                <div className='Hero__col col-xs-12 col-lg-6'>
                   <div className='Hero__wrapper'>
                     <h3 className='Hero__wrapper-subtitle'>
                       👋 {t('HeroSubtitle')}
@@ -46,10 +46,13 @@ const Hero = () => {
                     </h3>
                     <h1 className='Hero__wrapper-title'>{t('HeroTitle')}</h1>
                     <p className='Hero__wrapper-presentation'>{t('Hero')}</p>
-                    <a className='Hero__wrapper-curriculum' href={Curriculum} download>
-                      Dowload cv
-                      <FiDownloadCloud className='Hero__curriculum-icon' />
-                    </a>
+                    <div className='Hero__wrapper-btn'>
+                      <a className='Hero__btn-curriculum' href={Curriculum} download>
+                        Dowload cv
+                        <FiDownloadCloud className='Hero__curriculum-icon' />
+                      </a>
+                    </div>
+
                     <ul className='Hero__socialList'>
                       <li className='Hero__socialList-item'>
                         <a
@@ -74,7 +77,7 @@ const Hero = () => {
                     </ul>
                   </div>
                 </div>
-                <div className='Hero__col col-xs-12 col-sm-10 col-md-8 col-lg-7'>
+                <div className='Hero__col col-xs-12 col-sm-10 col-md-8 col-lg-6'>
                   <img src={HeroImage} alt='Hero' />
                 </div>
               </div>

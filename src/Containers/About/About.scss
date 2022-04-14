@@ -2,24 +2,29 @@
 
 .About {
   min-height: 100%;
-  padding: 0 3.75rem;
 
   .About__container {
     display: flex;
     flex-direction: column;
     height: 100%;
     max-width: 1400px;
+    padding: 0 3.75rem;
     margin: 0 auto;
 
     .About__row {
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-around;
-      padding: 8rem 0;
       position: relative;
       margin: 0;
 
       .About__col {
-        display: flex;
+        margin: 1rem auto;
+        padding: 0 !important;
+
+        .About__image {
+          height: 100%;
+          object-fit: cover;
+        }
 
         .About__wrapper {
           margin-top: 0.75rem;
@@ -30,21 +35,51 @@
             font-weight: 400;
             font-size: 0.875rem;
             margin-bottom: 0.25rem;
+            margin-top: 1rem;
+
+            @media (max-width: 767px) {
+              text-align: center;
+            }
           }
 
           &-title {
             font-size: 3.25rem;
-            line-height: 1;
+            line-height: 1.25;
             color: $color--title;
             margin-bottom: 1.75rem;
             font-weight: bold;
+
+            @media (max-width: 991px) {
+              font-size: 2.25rem;
+            }
+
+            @media (max-width: 767px) {
+              text-align: center;
+            }
+
+            @media (max-width: 576px) {
+              font-size: 2rem;
+            }
           }
 
           &-subtitle {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-weight: 400;
-            margin-bottom: 0.4em;
+            margin-bottom: 0.75em;
             color: $color--title;
+
+            @media (max-width: 991px) {
+              font-size: 1.25rem;
+              margin-bottom: 1.5rem;
+            }
+
+            @media (max-width: 767px) {
+              text-align: center;
+            }
+
+            @media (max-width: 576px) {
+              font-size: 1.125rem;
+            }
           }
 
           &-text {
@@ -84,11 +119,12 @@
             &:hover > .About__btn-icon {
               color: $color--third;
             }
-          }
-        }
 
-        &:last-child {
-          margin-left: -2.25rem;
+            @media (max-width: 767px) {
+              width: 100%;
+              text-align: center;
+            }
+          }
         }
       }
 
@@ -99,6 +135,11 @@
       @media (max-width: 576px) {
         padding: 3.5rem 0;
       }
+    }
+
+    @media (max-width: 991px) {
+      align-items: flex-start;
+      padding: 0;
     }
   }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Menu.scss';
-import Logo from '../../assets/Icon/MD.svg';
+import Logo from '../../assets/Icon/Logo-menu.png';
 import { useTranslation } from 'react-i18next';
 import * as Scroll from 'react-scroll';
 import { IoCloseOutline } from 'react-icons/io5';
@@ -24,7 +24,6 @@ const Menu = ({ onClose }) => {
       <header className='Menu__header'>
         <div className='Menu__header-logo'>
           <img className='Menu__logo-image' src={Logo} alt='logo' />
-          <h3 className='Menu__logo-title'>Michele Dellaquila</h3>
         </div>
         <div className='Menu__close' onClick={onClose}>
           <IoCloseOutline className='Menu__close-icon' />

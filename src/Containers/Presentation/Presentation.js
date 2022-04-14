@@ -1,6 +1,6 @@
 import React from 'react';
 import './Presentation.scss';
-import Logo from '../../assets/Icon/MD.svg';
+import Logo from '../../assets/Icon/Logo.png';
 import { motion } from 'framer-motion/dist/framer-motion';
 import {
   containerAnimation,
