@@ -1,14 +1,14 @@
 @import '../../index.scss';
 
 .About {
-  min-height: 100%;
+  position: relative;
+  padding: 8rem 3.75rem;
 
   .About__container {
     display: flex;
     flex-direction: column;
     height: 100%;
     max-width: 1400px;
-    padding: 0 3.75rem;
     margin: 0 auto;
 
     .About__row {
@@ -127,14 +127,6 @@
           }
         }
       }
-
-      @media (max-width: 991px) {
-        padding: 5rem 0;
-      }
-
-      @media (max-width: 576px) {
-        padding: 3.5rem 0;
-      }
     }
 
     @media (max-width: 991px) {
@@ -144,7 +136,10 @@
   }
 
   @media (max-width: 991px) {
-    height: auto;
-    padding: 0 1.5rem;
+    padding: 5rem 1.5rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 3rem 1.5rem;
   }
 }

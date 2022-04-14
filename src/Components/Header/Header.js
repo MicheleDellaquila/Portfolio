@@ -72,7 +72,6 @@ const Header = () => {
                 to={t('Esperienze')}
                 spy={true}
                 smooth={true}
-                offset={-50}
                 duration={500}
                 className='Header__list-item'
               >

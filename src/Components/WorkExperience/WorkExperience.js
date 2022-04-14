@@ -12,7 +12,7 @@ const WorkExperience = () => {
 
   // experience text
   const experienceText = (index) => {
-    switch (text) {
+    switch (index) {
       case 0:
         return t('FirstExperience');
 
@@ -20,13 +20,16 @@ const WorkExperience = () => {
         return t('SecondExperience');
 
       case 2:
-        return t('SecondExperience');
+        return t('ThirdExperience');
 
       case 3:
-        return t('SecondExperience');
+        return t('FourExperience');
 
       case 4:
-        return t('SecondExperience');
+        return t('FiveExperience');
+
+      default:
+        return '';
     }
   };
 
@@ -43,7 +46,7 @@ const WorkExperience = () => {
                 <h1 className='WorkExperience__item-title'>{experience.date}</h1>
                 <div className='WorkExperience__item-right'>
                   <h3 className='WorkExperience__right-type'>{experience.type}</h3>
-                  <p className='WorkExperience__right-text'>{experience.text}</p>
+                  <p className='WorkExperience__right-text'>{experienceText(index)}</p>
                   <ul className='WorkExperience__tecnologies'>
                     {experience.tecnologies?.map((tecnologie, index) => {
                       return (

@@ -15,6 +15,10 @@
     .Footer__over-logo {
       width: 160px;
       object-position: -16px;
+
+      @media (max-width: 576px) {
+        object-position: 0;
+      }
     }
 
     .Footer__languages {
@@ -44,6 +48,10 @@
         }
       }
     }
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
   }
 
   &__under {
@@ -53,5 +61,9 @@
       color: $color--text;
       font-size: 0.75rem;
     }
+  }
+
+  @media (max-width: 991px) {
+    padding: 0 1.5rem 2rem 1.5rem;
   }
 }

@@ -17,6 +17,10 @@ const resources = {
       per dispositivi iOS e Android con reattività e reazione nativa, ne ho usati diversi
       framework per lavori nella mia città come WordPress o bootstrap.Sono una persona ambiziosa che ama lavorare in team, proporre idee e collaborare.`,
       AboutBtn: 'Conttatami',
+      FrontendDeveloper: 'Sviluppo web da 3 anni con html5 , css3 , javascript o typescript.',
+      ReactDeveloper:
+        '3 anni di sviluppo React js con supporto per librerie annuali: Axios, Redux e ...',
+      MernDeveloper: 'Pattern mern: Node js , Express Js , Mongo db e react js',
       FirstExperience:
         'Realizzazione di e-commerce con utilizzo di wordpress + plugin di supporto come Woocomerce.',
       SecondExperience:
@@ -45,6 +49,10 @@ const resources = {
       for iOS and Android devices with native responsiveness and reaction, I have used several
       framework for jobs in my city like WordPress or bootstrap. I am an ambitious person who loves to work in a team, propose ideas and collaborate.`,
       AboutBtn: 'Contact',
+      FrontendDeveloper: 'Web development for 3 years with html5, css3, javascript or typescript.',
+      ReactDeveloper:
+        '3 years React js development with annual library support: Axios, Redux and ...',
+      MernDeveloper: 'Pattern mern: Node js, Express Js, Mongo db and react js',
       FirstExperience:
         'Creation of e-commerce using wordpress + support plugin such as Woocomerce.',
       SecondExperience:
