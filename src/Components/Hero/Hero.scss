@@ -6,7 +6,7 @@
 
   &__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 auto;
     flex-direction: column;
     height: 100%;
@@ -176,12 +176,10 @@
         }
 
         &:first-child {
-          padding-right: 1rem !important;
+          padding-left: 1rem !important;
 
           @media (max-width: 991px) {
-            &:first-child {
-              padding-right: 0;
-            }
+            padding-left: 0;
           }
         }
       }
