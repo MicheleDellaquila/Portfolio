@@ -1,0 +1,15 @@
+.HamburgerMenu {
+  display: none;
+  cursor: pointer;
+
+  &__icon {
+    color: var(--color-secondary);
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: 991px) {
+    display: flex;
+    align-items: center;
+  }
+}

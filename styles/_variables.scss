@@ -1,0 +1,18 @@
+/* variable */
+:root {
+  --color-bg: #ffffff;
+  --color-primary: #03045E;
+  --color-secondary: #B8FB3C;
+  --width-container: 1490px;
+}
+
+/* grid system */
+$columns: 12;
+$breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+) !default;
