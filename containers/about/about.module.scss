@@ -1,0 +1,130 @@
+.About {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  div[class*='col'] {
+    margin-top: 32px;
+
+    @media (max-width: 991px) {
+      order: 2;
+    }
+
+    &:last-child {
+      @media (max-width: 991px) {
+        order: 1;
+      }
+    }
+  }
+
+  &__title {
+    color: #001437;
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-top: 32px;
+
+    @media (max-width: 991px) {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 3.063rem;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 1.938rem;
+    }
+  }
+
+  &__subtitle {
+    color: #001437;
+    margin-bottom: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 1.563rem;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-bottom: 48px;
+    line-height: 1.5;
+    color: #001437;
+
+    @media (max-width: 991px) {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__wrapperBtn {
+    display: flex;
+    justify-content: flex-start;
+
+    .About__contact {
+      padding: 14px 32px;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      color: var(--color-primary);
+      background-color: var(--color-secondary);
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #ffffff;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+      }
+    }
+
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+  }
+
+  &__cornice {
+    border: 2px solid var(--color-secondary);
+    border-radius: 8px;
+
+    .About__image {
+      margin: -16px 0 16px 16px;
+      border-radius: 8px;
+
+      @media (max-width: 991px) {
+        width: 100%;
+        object-fit: cover;
+        height: 360px;
+      }
+
+      @media (max-width: 575px) {
+        margin: -8px 0 8px 8px;
+        height: 180px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    height: auto;
+    padding: 72px 0;
+  }
+
+  @media (max-width: 575px) {
+    padding: 32px 0;
+  }
+}

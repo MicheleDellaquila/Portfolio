@@ -12,25 +12,25 @@ const Skills = () => {
   return (
     <Element name='Skill' className={classes.Skills}>
       <div className='container'>
-        <div className='row'>
-          <div className='col-xs-12 col-md-6 col-lg-4'>
+        <div className="center row">
+          <div className='col-xs-12 col-sm-6 col-lg-4'>
             <div className={classes.Skills__container}>
               <figure className={classes.Skills__boxIcon}>
                 <MdWeb className={classes.Skills__icon} />
               </figure>
               <div>
-                <h3 className={classes.Skills__title}>Frontend developer</h3>
+                <h5 className={classes.Skills__title}>Frontend developer</h5>
                 <p className={classes.Skills__text}>{t('Skills1')}</p>
               </div>
             </div>
           </div>
-          <div className='col-xs-12 col-md-6 col-lg-4'>
+          <div className='col-xs-12 col-sm-6 col-lg-4'>
             <div className={classes.Skills__container}>
               <figure className={classes.Skills__boxIcon}>
                 <FiDatabase className={classes.Skills__icon} />
               </figure>
               <div>
-                <h3 className={classes.Skills__title}>Mern pattern</h3>
+                <h5 className={classes.Skills__title}>Mern pattern</h5>
                 <p className={classes.Skills__text}>{t('Skills2')}</p>
               </div>
             </div>
@@ -41,7 +41,7 @@ const Skills = () => {
                 <GrReactjs className={classes.Skills__icon} />
               </figure>
               <div>
-                <h3 className={classes.Skills__title}>React js Developer</h3>
+                <h5 className={classes.Skills__title}>React js Developer</h5>
                 <p className={classes.Skills__text}>{t('Skills3')}</p>
               </div>
             </div>

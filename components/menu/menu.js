@@ -7,6 +7,7 @@ import Dropdown from '../dropdown/dropdown';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import MenuAnimation from '../../animation/menu';
+import Logo from '../../containers/logo/logo';
 
 // Link
 var Link = Scroll.Link;
@@ -35,7 +36,7 @@ const Menu = ({ onClose }) => {
       className={classes.Menu}
     >
       <header className={classes.Menu__header}>
-        <h4 className={classes.Menu__title}>MICHELE DELLAQUILA</h4>
+        <Logo variant={true} />
         <div className={classes.Menu__boxIcon} onClick={onClose}>
           <MdClose className={classes.Menu__icon} />
         </div>

@@ -1,4 +1,4 @@
-import '../styles/global.scss';
+import '../styles/_global.scss';
 import '../utility/translate/translate';
 
 function MyApp({ Component, pageProps }) {

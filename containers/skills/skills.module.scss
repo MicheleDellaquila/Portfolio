@@ -1,14 +1,9 @@
 .Skills {
-  padding: 0 32px 32px;
+  padding-bottom: 32px;
   background-color: var(--color-secondary);
 
   div[class*='col'] {
-    padding-right: 32px;
     margin-top: 32px;
-
-    @media (max-width: 767px) {
-      padding-right: 0;
-    }
   }
 
   &__container {
@@ -38,17 +33,24 @@
     }
 
     .Skills__title {
-      font-size: 24px;
       color: var(--color-primary);
       font-family: 'Inter', sans-serif;
       font-weight: bold;
       margin-bottom: 8px;
+
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
 
     .Skills__text {
       color: var(--color-primary);
       font-family: 'Inter', sans-serif;
       font-weight: 400;
+
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
 
     @media (max-width: 767px) {

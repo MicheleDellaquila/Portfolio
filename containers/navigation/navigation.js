@@ -14,7 +14,6 @@ var Link = Scroll.Link;
 const Navigation = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const { t, i18n } = useTranslation();
-  console.log(i18n.language);
 
   // close dropdown
   const closeDropdownHandler = () => {

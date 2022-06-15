@@ -2,12 +2,18 @@
   color: #ffffff;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 1.125rem;
+
+  @media (max-width: 575px) {
+    font-size: 1rem;
+  }
 }
 
 .Logo__variant {
   color: var(--color-primary);
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 1.125rem;
+
+  @media (max-width: 575px) {
+    font-size: 1rem;
+  }
 }

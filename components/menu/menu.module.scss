@@ -31,6 +31,10 @@
       color: var(--color-primary);
       cursor: pointer;
     }
+
+    @media (max-width: 575px) {
+      padding: 16px;
+    }
   }
 
   &__container {
@@ -48,7 +52,7 @@
       color: var(--color-primary);
       font-family: 'Inter', sans-serif;
       font-weight: bold;
-      font-size: 3rem;
+      font-size: 3.063rem;
       text-align: center;
       margin-top: 1.5rem;
       cursor: pointer;
@@ -74,8 +78,13 @@
       }
 
       @media (max-width: 575px) {
-        font-size: 2rem;
+        font-size: 1.938rem;
       }
+    }
+
+
+    @media (max-width: 575px) {
+      padding-top: 16px;
     }
   }
 }
