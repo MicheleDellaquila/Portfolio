@@ -29,7 +29,7 @@ const QuickLinks = () => {
           </Link>
         </li>
         <li className={classes.QuickLinks__item}>
-          <Link to='Skills' smooth={true} duration={500}>
+          <Link to='Skill' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
