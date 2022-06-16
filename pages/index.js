@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Hero from '../containers/hero/hero';
 import Skills from '../containers/skills/skills';
 import About from '../containers/about/about';
-import Projects from '../containers/projects/projects';
+import Projects from '../components/projects/projects';
 import Footer from '../containers/footer/footer';
 
 const Home = () => {
@@ -11,8 +11,8 @@ const Home = () => {
     <Fragment>
       <Head>
         <title>Michele Dellaquila</title>
-        <link rel='icon' href='./logo.png' />
-        <link rel='apple-touch-icon' href='./logo.png' />
+        <link rel='icon' href='/static/logo.png' />
+        <link rel='apple-touch-icon' href='/static/logo.png' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />

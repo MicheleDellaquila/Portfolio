@@ -1,8 +1,11 @@
 import React from 'react';
 import classes from './projects.module.scss';
 import { Element } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <Element name='Progetti' className={classes.Projects}>
       <div className='container'>
@@ -15,20 +18,17 @@ const Projects = () => {
           <div className='col-xs-12 col-lg-10'>
             <div className={classes.Projects__card}>
               <div className={classes.Projects__left}>
-                <h1 className={classes.Projects__title}>I miei progetti ?</h1>
-                <p className={classes.Projects__text}>
-                  In questi tre anni ho svolto diversi progetti per vare
-                  industrie , negozie locali e tanto altro.Visiona i miei
-                  progetti tramite il mio profilo git hub per apprendere le mie
-                  skill e le metodologie attuate.
-                </p>
+                <h1 className={classes.Projects__title}>
+                  {t('I miei progetti ?')}
+                </h1>
+                <p className={classes.Projects__text}>{t('ProgettiText')}</p>
                 <div className={classes.Projects__wrapperBtn}>
                   <a
                     className={classes.Projects__btn}
                     href='https://github.com/MicheleDellaquila'
                     target='_blank'
                   >
-                    I miei progetti
+                    {t('PerogettiBtn')}I miei progetti
                   </a>
                 </div>
               </div>
