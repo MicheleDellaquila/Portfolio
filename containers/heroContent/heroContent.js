@@ -23,7 +23,7 @@ const HeroContent = () => {
             </div>
           </div>
           <div className='col-xs-12 col-sm-10 col-md-10 col-lg-6'>
-            <img src='./heroImage.png' alt='Michele Dellaquila web dev' />
+            <img className={classes.HeroContent__image} src='./heroImage.png' alt='Michele Dellaquila web dev' />
           </div>
         </div>
       </div>

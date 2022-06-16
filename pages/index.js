@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Hero from '../containers/hero/hero';
 import Skills from '../containers/skills/skills';
 import About from '../containers/about/about';
+import Projects from '../containers/projects/projects';
+import Footer from '../containers/footer/footer';
 
 const Home = () => {
   return (
@@ -34,6 +36,8 @@ const Home = () => {
       <Hero />
       <Skills />
       <About />
+      <Projects />
+      <Footer />
     </Fragment>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './header.module.scss';
-import Logo from '../../containers/logo/logo';
-import Navigation from '../../containers/navigation/navigation';
+import Logo from '../logo/logo';
+import Navigation from '../../components/navigation/navigation';
 
 const Header = () => {
   return (

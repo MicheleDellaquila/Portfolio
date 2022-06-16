@@ -82,6 +82,10 @@
     }
   }
 
+  &__image {
+    width: 100%;
+  }
+
   @media (max-width: 991px) {
     height: auto;
     align-items: flex-start;

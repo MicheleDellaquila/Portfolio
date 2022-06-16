@@ -3,10 +3,10 @@ import classes from './navigation.module.scss';
 import { IoIosArrowDown } from 'react-icons/io';
 import IT from 'country-flag-icons/react/3x2/IT';
 import GB from 'country-flag-icons/react/3x2/GB';
-import Dropdown from '../../components/dropdown/dropdown';
+import Dropdown from '../dropdown/dropdown';
 import { useTranslation } from 'react-i18next';
 import * as Scroll from 'react-scroll';
-import HamburgerMenu from '../hamburgerMenu/hamburgerMenu';
+import HamburgerMenu from '../../containers/hamburgerMenu/hamburgerMenu';
 
 // Link
 var Link = Scroll.Link;

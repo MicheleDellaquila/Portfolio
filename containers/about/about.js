@@ -1,12 +1,13 @@
 import React from 'react';
 import classes from './about.module.scss';
 import { useTranslation } from 'react-i18next';
+import { Element } from 'react-scroll';
 
 const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={classes.About}>
+    <Element name="Su di me" className={classes.About}>
       <div className='container'>
         <div
           style={{
@@ -38,7 +39,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 
