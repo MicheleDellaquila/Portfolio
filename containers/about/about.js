@@ -32,7 +32,7 @@ const About = () => {
             <figure className={classes.About__cornice}>
               <img
                 className={classes.About__image}
-                src='/about.png'
+                src='/static/about.png'
                 alt='about'
               />
             </figure>

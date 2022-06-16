@@ -35,7 +35,7 @@ const Projects = () => {
               <div className={classes.Projects__right}>
                 <img
                   className={classes.Projects__image}
-                  src='/projects.png'
+                  src='/static/projects.png'
                   alt='progetti'
                 />
               </div>
