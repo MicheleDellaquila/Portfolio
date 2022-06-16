@@ -90,4 +90,8 @@
       flex-direction: column;
     }
   }
+
+  @media (max-width: 575px) {
+    padding-bottom: 32px;
+  }
 }
