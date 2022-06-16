@@ -19,7 +19,7 @@ const Projects = () => {
             <div className={classes.Projects__card}>
               <div className={classes.Projects__left}>
                 <h1 className={classes.Projects__title}>
-                  {t('I miei progetti ?')}
+                  {t('ProgettiTitle')}
                 </h1>
                 <p className={classes.Projects__text}>{t('ProgettiText')}</p>
                 <div className={classes.Projects__wrapperBtn}>
@@ -28,7 +28,7 @@ const Projects = () => {
                     href='https://github.com/MicheleDellaquila'
                     target='_blank'
                   >
-                    {t('PerogettiBtn')}I miei progetti
+                    {t('PerogettiBtn')}
                   </a>
                 </div>
               </div>
