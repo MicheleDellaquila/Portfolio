@@ -22,7 +22,7 @@ const HeroContent = () => {
               </a>
             </div>
           </div>
-          <div className={classes.HeroContent__col}>
+          <div className={`${classes.HeroContent__col} col-lg-6`}>
             <div className={classes.HeroContent__contentCard}>
               <div className={classes.HeroContent__card}>
                 <h4 className={classes.HeroContent__cardTitle}>

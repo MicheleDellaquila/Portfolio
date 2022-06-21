@@ -32,10 +32,6 @@ const Home = () => {
           content='HTML, CSS, JavaScript, REACT JS , NEXT JS , MONGO DB , EXPRESS JS , NODE JS'
         />
       </Head>
-      <Hero />
-      <About />
-      <Projects />
-      <Footer />
     </Fragment>
   );
 };

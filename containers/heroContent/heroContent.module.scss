@@ -1,15 +1,14 @@
 .HeroContent {
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 160px 0;
   height: 100vh;
 
   &__row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin-left: -32px;
+    margin-right: -32px;
 
     .HeroContent__col {
       position: relative;
@@ -85,8 +84,8 @@
       }
 
       .HeroContent__contentCard {
+        display: flex;
         position: relative;
-        margin-right: 80px;
 
         .HeroContent__card {
           position: relative;
@@ -94,6 +93,7 @@
           background-color: #ffffff;
           padding: 48px 32px 64px;
           border-radius: 32px;
+          margin: 0 auto;
 
           .HeroContent__cardTitle {
             font-family: 'Inter', sans-serif;
@@ -153,6 +153,10 @@
         }
       }
 
+      &:last-child {
+        margin: 0 auto;
+      }
+
       @media (max-width: 991px) {
         &:first-child {
           order: 2;
@@ -169,6 +173,11 @@
     @media (max-width: 991px) {
       flex-direction: column;
     }
+
+    @media (max-width: 575px) {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
   }
 
   @media (max-width: 991px) {
@@ -178,6 +187,6 @@
 
   @media (max-width: 575px) {
     height: auto;
-    padding: 64px 0 48px;
+    padding: 96px 0 48px;
   }
 }
