@@ -7,7 +7,7 @@ const HeroContent = () => {
 
   return (
     <div className={classes.HeroContent}>
-      <div className='container'>
+      <div className={classes.HeroContent__container}>
         <div className={classes.HeroContent__row}>
           <div className={classes.HeroContent__col}>
             <h1 className={classes.HeroContent__title}>{t('HeroTitle')}</h1>
@@ -22,7 +22,7 @@ const HeroContent = () => {
               </a>
             </div>
           </div>
-          <div className={`${classes.HeroContent__col} col-lg-6`}>
+          <div className={`${classes.HeroContent__col}`}>
             <div className={classes.HeroContent__contentCard}>
               <div className={classes.HeroContent__card}>
                 <h4 className={classes.HeroContent__cardTitle}>

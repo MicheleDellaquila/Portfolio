@@ -6,16 +6,20 @@
   padding-top: 32px;
   z-index: 100;
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: -32px;
-    margin-right: -32px;
-  }
-
-  .col {
+  &__container {
+    max-width: 1250px;
+    margin: 0 auto;
     padding: 0 32px;
+
+    .Header__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 575px) {
+      padding: 0 16px;
+    }
   }
 
   @media (max-width: 575px) {

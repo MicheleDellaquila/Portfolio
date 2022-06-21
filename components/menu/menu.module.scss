@@ -52,7 +52,7 @@
       color: var(--color-primary);
       font-family: 'Inter', sans-serif;
       font-weight: bold;
-      font-size: 3.063rem;
+      font-size: 3.062rem;
       text-align: center;
       margin-top: 1.5rem;
       cursor: pointer;
@@ -78,10 +78,9 @@
       }
 
       @media (max-width: 575px) {
-        font-size: 1.938rem;
+        font-size: 2.438rem;
       }
     }
-
 
     @media (max-width: 575px) {
       padding-top: 16px;

@@ -7,7 +7,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <Element name="Su di me" className={classes.About}>
+    <Element name='Su di me' className={classes.About}>
       <div className='container'>
         <div
           style={{
@@ -17,7 +17,7 @@ const About = () => {
         >
           <div className='col-xs-12 col-lg-6'>
             <h1 className={classes.About__title}>{t('AboutTitle')}</h1>
-            <h4 className={classes.About__subtitle}>{t('AboutText')}</h4>
+
             <p className={classes.About__text}>{t('AboutDesciption')}</p>
             <div className={classes.About__wrapperBtn}>
               <a

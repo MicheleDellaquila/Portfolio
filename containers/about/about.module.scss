@@ -1,11 +1,15 @@
 .About {
-  padding: 160px 0 120px;
+  padding: 120px 0;
 
   div[class*='col'] {
     margin-top: 32px;
 
     @media (max-width: 991px) {
       order: 2;
+    }
+
+    @media (max-width: 575px) {
+      padding: 0 16px;
     }
 
     &:last-child {
@@ -16,24 +20,23 @@
   }
 
   &__title {
-    color: #001437;
+    color: #000814;
     margin-bottom: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     line-height: 1.25;
-    margin-top: 32px;
+    font-size: 76px;
 
     @media (max-width: 991px) {
-      margin-top: 0;
       text-align: center;
     }
 
     @media (max-width: 767px) {
-      font-size: 3.063rem;
+      font-size: 61px;
     }
 
     @media (max-width: 575px) {
-      font-size: 1.938rem;
+      font-size: 31px;
     }
   }
 
@@ -60,9 +63,9 @@
   &__text {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     line-height: 1.5;
-    color: #001437;
+    color: #666666;
 
     @media (max-width: 991px) {
       text-align: center;
@@ -75,14 +78,15 @@
     justify-content: flex-start;
 
     .About__contact {
-      padding: 14px 32px;
+      padding: 16px 40px;
       font-size: 16px;
       font-family: 'Inter', sans-serif;
-      font-weight: 400;
+      font-weight: bold;
       color: var(--color-primary);
       background-color: var(--color-secondary);
       cursor: pointer;
       text-decoration: none;
+      border-radius: 6px;
 
       &:hover {
         background-color: #ffffff;

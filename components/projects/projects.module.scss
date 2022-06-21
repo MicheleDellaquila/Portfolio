@@ -1,6 +1,12 @@
 .Projects {
   padding-bottom: 120px;
 
+  div[class*='col'] {
+    @media (max-width: 575px) {
+      padding: 0 16px;
+    }
+  }
+
   &__card {
     position: relative;
     overflow: hidden;
@@ -18,22 +24,25 @@
         font-weight: bold;
         margin-bottom: 16px;
         line-height: 1.2;
-
-        @media (max-width: 767px) {
-          font-size: 3.063rem;
-        }
+        font-size: 49px;
 
         @media (max-width: 575px) {
-          font-size: 1.938rem;
+          font-size: 31px;
+          text-align: center;
         }
       }
 
       .Projects__text {
-        color: #001437;
+        color: #000814;
         font-family: 'Inter', sans-serif;
         font-weight: 400;
         margin-bottom: 32px;
         line-height: 1.5;
+        font-size: 20px;
+
+        @media (max-width: 575px) {
+          text-align: center;
+        }
       }
 
       .Projects__wrapperBtn {
@@ -41,13 +50,23 @@
         justify-content: flex-start;
 
         .Projects__btn {
-          padding: 14px 48px;
+          padding: 16px 48px;
           border-radius: 32px;
           font-family: 'Inter', sans-serif;
           font-weight: 400;
           text-decoration: none;
           color: var(--color-secondary);
           background-color: var(--color-primary);
+
+          &:hover {
+            background-color: var(--color-secondary);
+            border: 1px solid var(--color-primary);
+            color: var(--color-primary);
+          }
+        }
+
+        @media (max-width: 575px) {
+          justify-content: center;
         }
       }
 
@@ -92,6 +111,6 @@
   }
 
   @media (max-width: 575px) {
-    padding-bottom: 32px;
+    padding: 32px 0;
   }
 }
