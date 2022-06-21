@@ -2,11 +2,11 @@
   position: absolute;
   top: 100%;
   width: 100%;
+  right: 0;
   margin-top: 16px;
   background-color: var(--color-bg);
   border-radius: 8px;
   padding: 8px;
-  z-index: 1000;
   border: 1px solid var(--color-primary);
 
   &__content {
@@ -19,7 +19,7 @@
     }
 
     .Dropdown__text {
-      color: var(--color-primary);
+      color: var(--color-title);
       margin-left: 8px;
       line-height: 1;
       font-family: 'Inter', sans-serif;

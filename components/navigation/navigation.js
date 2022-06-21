@@ -29,11 +29,6 @@ const Navigation = () => {
           </Link>
         </li>
         <li className={classes.Navigation__item}>
-          <Link to='Skill' smooth={true} duration={500}>
-            Skill
-          </Link>
-        </li>
-        <li className={classes.Navigation__item}>
           <Link to='Su di me' smooth={true} duration={500}>
             {t('SuDiMe')}
           </Link>

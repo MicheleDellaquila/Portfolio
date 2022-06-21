@@ -29,11 +29,6 @@ const QuickLinks = () => {
           </Link>
         </li>
         <li className={classes.QuickLinks__item}>
-          <Link to='Skill' smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className={classes.QuickLinks__item}>
           <Link to='Su di me' smooth={true} duration={500}>
             {t('SuDiMe')}
           </Link>

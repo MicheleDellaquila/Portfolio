@@ -49,11 +49,6 @@ const Menu = ({ onClose }) => {
             </Link>
           </li>
           <li className={classes.Menu__item}>
-            <Link to='Skills' smooth={true} duration={500} onClick={onClose}>
-              Skills
-            </Link>
-          </li>
-          <li className={classes.Menu__item}>
             <Link to='Su di me' smooth={true} duration={500} onClick={onClose}>
               {t('SuDiMe')}
             </Link>

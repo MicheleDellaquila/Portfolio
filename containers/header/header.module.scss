@@ -4,11 +4,16 @@
   left: 0;
   width: 100%;
   padding-top: 32px;
+  z-index: 100;
 
   .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .col {
+    padding: 0 16px;
   }
 
   @media (max-width: 575px) {

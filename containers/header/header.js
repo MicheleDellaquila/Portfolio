@@ -8,8 +8,12 @@ const Header = () => {
     <div className={classes.Header}>
       <header className='container'>
         <div className={classes.row}>
-          <Logo />
-          <Navigation />
+          <div className={classes.col}>
+            <Logo />
+          </div>
+          <div className={classes.col}>
+            <Navigation />
+          </div>
         </div>
       </header>
     </div>
