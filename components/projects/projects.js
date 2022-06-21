@@ -15,7 +15,7 @@ const Projects = () => {
           }}
           className='row'
         >
-          <div className='col-xs-12 col-lg-10'>
+          <div className='col-xs-12 col-lg-12'>
             <div className={classes.Projects__card}>
               <div className={classes.Projects__left}>
                 <h1 className={classes.Projects__title}>

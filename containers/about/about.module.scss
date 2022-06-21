@@ -81,12 +81,15 @@
       padding: 16px 40px;
       font-size: 16px;
       font-family: 'Inter', sans-serif;
-      font-weight: bold;
+      font-weight: 700;
       color: var(--color-primary);
       background-color: var(--color-secondary);
+      border: 1px solid var(--color-secondary);
       cursor: pointer;
       text-decoration: none;
       border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
 
       &:hover {
         background-color: #ffffff;
